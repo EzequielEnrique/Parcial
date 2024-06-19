@@ -1,0 +1,94 @@
+/* Estilos Picocss básicos */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Pacifico', cursive, Arial, sans-serif;
+}
+
+body {
+    background: url('imagen.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    overflow: auto; /* Permitir scroll */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+#btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    transition: transform 0.3s ease-out;
+}
+
+.movie-article:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-details {
+    text-align: center;
+}
+
+.movie-details h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.movie-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.pagination-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.titulo {
+    --pico-font-family: Pacifico, cursive;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
+}
